@@ -2,17 +2,17 @@
   "schema_version": 1,
   "channel": "stable",
   "release": {
-    "version": "1.20.3",
-    "published_at": "2026-09-03T20:16:32.057502Z",
-    "notes": "Darstellungsfehler der Schaltflächen in der Windows-Ersteinrichtung behoben.",
+    "version": "1.20.4",
+    "published_at": "2026-09-03T20:18:06.063060Z",
+    "notes": "Schaltflächen der Ersteinrichtung vollständig sichtbar; Updateprüfung gegen veraltete CDN-Caches abgesichert.",
     "artifacts": {
       "windows-x86_64": {
-        "url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor-releases/releases/download/v1.20.3/Internet-Fruehwarnmonitor-1.20.3-Setup.exe",
-        "filename": "Internet-Fruehwarnmonitor-1.20.3-Setup.exe",
-        "sha256": "f9472d506dc08a2739902661a39105928f97ad832ec75886f980a25a3687993d",
-        "size": 15633147
+        "url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor-releases/releases/download/v1.20.4/Internet-Fruehwarnmonitor-1.20.4-Setup.exe",
+        "filename": "Internet-Fruehwarnmonitor-1.20.4-Setup.exe",
+        "sha256": "ca1a4f44468d301fd2b25fd7b65c99b0af53205e610d049f68f593327c300826",
+        "size": 15631667
       }
     }
   },
-  "signature": "dRhBVc490tXxqXmvklWfMj+gn93R9MpdLynC6qTiD9RQuXGC4RWSq1rht+aNSAvwECfiZGMImQPg+jt8nTlqDA=="
+  "signature": "IcNWWXz/WWrX754QQo2aQontN+NCNcauF59Ntni4VNtPMdJvj1w6rLt192LOxU5XEAie+xRmq1uv4nPzrVdCCg=="
 }
