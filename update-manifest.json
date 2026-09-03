@@ -2,17 +2,17 @@
   "schema_version": 1,
   "channel": "stable",
   "release": {
-    "version": "1.21.0",
-    "published_at": "2026-09-03T20:31:19.963113Z",
-    "notes": "Windows-Installer auf NSIS umgestellt; sichere Migration vorhandener Installationen; Code-Signing-Hooks vorbereitet.",
+    "version": "1.21.1",
+    "published_at": "2026-09-03T23:57:50.180872Z",
+    "notes": "Tagesberichte, verständliche Messdienstfehler und korrigierte FRITZ!Box-Neuverbindungserkennung",
     "artifacts": {
       "windows-x86_64": {
-        "url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor-releases/releases/download/v1.21.0/Internet-Fruehwarnmonitor-1.21.0-Setup.exe",
-        "filename": "Internet-Fruehwarnmonitor-1.21.0-Setup.exe",
-        "sha256": "52976b89257f2e3ef9f7ca64975a4b9d1d705124e5f450bd249022b5a319687d",
-        "size": 14334432
+        "url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor-releases/releases/download/v1.21.1/Internet-Fruehwarnmonitor-1.21.1-Setup.exe",
+        "filename": "Internet-Fruehwarnmonitor-1.21.1-Setup.exe",
+        "sha256": "ce6baa479bd7baaccb82020dafb2e10dcb3edaf7ed0a199471bbff7944d65fbf",
+        "size": 14349909
       }
     }
   },
-  "signature": "d3Ep38K9GcyIn01SptojU2GNRSmxO+lNnD4KsG/4NytkOmbl8WDZV74qemeIWoPL5H3tOuhKylSJzjm2IuIuCQ=="
+  "signature": "glVb1/+c58rjXtSu78OpCXoSbi5PRMk7X5yCjcO4Zz42w3vUPNVbZu6TeCEJBz6dOh6w74btLa3OTcofFc16AQ=="
 }
