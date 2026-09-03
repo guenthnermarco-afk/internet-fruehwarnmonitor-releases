@@ -7,6 +7,7 @@ Internet-Frühwarnmonitors.
 Der Programmquellcode, lokale Messdaten und der private Signierschlüssel sind
 nicht Bestandteil dieses Repositorys.
 
-Installationspakete befinden sich unter **Releases**. Das Programm prüft
-`update-manifest.json` auf neue, für das jeweilige Betriebssystem passende
-Versionen und akzeptiert das Manifest nur mit gültiger Ed25519-Signatur.
+Installationspakete befinden sich unter **Releases**. Das Programm lädt das
+`update-manifest.json`-Asset des jeweils neuesten Releases, wählt das zum
+Betriebssystem passende Paket aus und akzeptiert das Manifest nur mit gültiger
+Ed25519-Signatur.
