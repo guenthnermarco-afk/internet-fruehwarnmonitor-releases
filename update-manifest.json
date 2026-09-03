@@ -2,17 +2,17 @@
   "schema_version": 1,
   "channel": "stable",
   "release": {
-    "version": "1.20.5",
-    "published_at": "2026-09-03T20:20:56.112337Z",
-    "notes": "Schaltflächen der Ersteinrichtung vollständig sichtbar; robuster versionsgebundener Updatekanal.",
+    "version": "1.21.0",
+    "published_at": "2026-09-03T20:31:19.963113Z",
+    "notes": "Windows-Installer auf NSIS umgestellt; sichere Migration vorhandener Installationen; Code-Signing-Hooks vorbereitet.",
     "artifacts": {
       "windows-x86_64": {
-        "url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor-releases/releases/download/v1.20.5/Internet-Fruehwarnmonitor-1.20.5-Setup.exe",
-        "filename": "Internet-Fruehwarnmonitor-1.20.5-Setup.exe",
-        "sha256": "a57e6cdd77f1f0bd6abedefed7de123c56dbe3a5f6394a30e11d47c06e8715d2",
-        "size": 15636014
+        "url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor-releases/releases/download/v1.21.0/Internet-Fruehwarnmonitor-1.21.0-Setup.exe",
+        "filename": "Internet-Fruehwarnmonitor-1.21.0-Setup.exe",
+        "sha256": "52976b89257f2e3ef9f7ca64975a4b9d1d705124e5f450bd249022b5a319687d",
+        "size": 14334432
       }
     }
   },
-  "signature": "rtaowJ4vtebKDo9QBSck8XbZ4qh82XRE7JCCI8RVBc5GRZO650gxsWWTgvQzaubr2FnTwobl2VzloS/e8jqxAA=="
+  "signature": "d3Ep38K9GcyIn01SptojU2GNRSmxO+lNnD4KsG/4NytkOmbl8WDZV74qemeIWoPL5H3tOuhKylSJzjm2IuIuCQ=="
 }
