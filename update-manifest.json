@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "channel": "stable",
+  "release": {
+    "version": "1.20.2",
+    "published_at": "2026-09-03T20:07:19.485786Z",
+    "notes": "Signierter Updatekanal aktiviert und erster vollständiger Windows-Updatepfad veröffentlicht.",
+    "artifacts": {
+      "windows-x86_64": {
+        "url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor-releases/releases/download/v1.20.2/Internet-Fruehwarnmonitor-1.20.2-Setup.exe",
+        "filename": "Internet-Fruehwarnmonitor-1.20.2-Setup.exe",
+        "sha256": "b73470a7bd1eeeff469ea6c058d659e71da2cd06242a1f066d715a98efa9e917",
+        "size": 15630526
+      }
+    }
+  },
+  "signature": "2el3pmPw0dtoIG9JKAK4VVsJDu2v8RlboJagX5pvWnAK8tne93Gcut+wH/LRhoh8HT4QXTcxzwHppJgvz9MDDQ=="
+}
