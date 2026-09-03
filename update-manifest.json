@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "channel": "stable",
+  "release": {
+    "version": "1.20.5",
+    "published_at": "2026-09-03T20:20:56.112337Z",
+    "notes": "Schaltflächen der Ersteinrichtung vollständig sichtbar; robuster versionsgebundener Updatekanal.",
+    "artifacts": {
+      "windows-x86_64": {
+        "url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor-releases/releases/download/v1.20.5/Internet-Fruehwarnmonitor-1.20.5-Setup.exe",
+        "filename": "Internet-Fruehwarnmonitor-1.20.5-Setup.exe",
+        "sha256": "a57e6cdd77f1f0bd6abedefed7de123c56dbe3a5f6394a30e11d47c06e8715d2",
+        "size": 15636014
+      }
+    }
+  },
+  "signature": "rtaowJ4vtebKDo9QBSck8XbZ4qh82XRE7JCCI8RVBc5GRZO650gxsWWTgvQzaubr2FnTwobl2VzloS/e8jqxAA=="
+}
