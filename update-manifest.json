@@ -2,17 +2,17 @@
   "schema_version": 1,
   "channel": "stable",
   "release": {
-    "version": "1.22.1",
-    "published_at": "2026-09-04T00:17:32.281851Z",
-    "notes": "Live-Dateilinks öffnen in neuen Tabs; Zeitfenster-Auswertungszeitraum eindeutig gekennzeichnet.",
+    "version": "1.27.1",
+    "published_at": "2026-09-04T16:09:38.324753Z",
+    "notes": "Störungsreports zeigen das Datum einmal, kompakte Uhrzeiten und zusammengefasste Zustandsverläufe mit aufklappbaren Details.",
     "artifacts": {
       "windows-x86_64": {
-        "url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor-releases/releases/download/v1.22.1/Internet-Fruehwarnmonitor-1.22.1-Setup.exe",
-        "filename": "Internet-Fruehwarnmonitor-1.22.1-Setup.exe",
-        "sha256": "4e7164136cb2fc62a6e3125e72d25318fdf2e2cb3188ec2eb3526d9d04453e5e",
-        "size": 14372043
+        "url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor-releases/releases/download/v1.27.1/Internet-Fruehwarnmonitor-1.27.1-Setup.exe",
+        "filename": "Internet-Fruehwarnmonitor-1.27.1-Setup.exe",
+        "sha256": "a71002ba582f6574897157c388ad90dd860783e1a1f9bcfb0c9ac51c5fa608f3",
+        "size": 13645457
       }
     }
   },
-  "signature": "vr4JSpopkRVx6PKt9a3Ihw2qTw6nqIGv04DV4kZKvRaU5RYEE3kSHPv4dQMUyj5fi1ya8L17fgORxnQ1PGMFCQ=="
+  "signature": "qeJWeDKOJ8NTRf8u3S8FHq0EoqylZusenBk0huMc/VkykZxZkCQRZzunyDHUKmaALEfxujBTlFoxSULXXfu4BA=="
 }
