@@ -3,8 +3,8 @@
   "channel": "stable",
   "release": {
     "version": "1.27.2",
-    "published_at": "2026-09-04T16:26:44.827251Z",
-    "notes": "Portabler Verlaufsimport und -export zwischen Windows und macOS. Vorhandene Messungen bleiben erhalten; Duplikate sowie gerätespezifische Einstellungen und Zugangsdaten werden nicht übernommen.",
+    "published_at": "2026-09-04T16:36:38.092139Z",
+    "notes": "Portabler Verlaufsimport und -export zwischen Windows, macOS und Linux. Vorhandene Messungen bleiben erhalten; Duplikate sowie gerätespezifische Einstellungen und Zugangsdaten werden nicht übernommen.",
     "artifacts": {
       "windows-x86_64": {
         "url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor-releases/releases/download/v1.27.2/Internet-Fruehwarnmonitor-1.27.2-Setup.exe",
@@ -23,8 +23,20 @@
         "filename": "Internet-Fruehwarnmonitor-1.27.2-macOS-arm64.dmg",
         "sha256": "65b53abc3018ab488432eb174aeb2ae9d9fd0986a110e8ce4db42e91b3bfa2f3",
         "size": 19464277
+      },
+      "linux-x86_64-deb": {
+        "url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor-releases/releases/download/v1.27.2/internet-fruehwarnmonitor_1.27.2_amd64.deb",
+        "filename": "internet-fruehwarnmonitor_1.27.2_amd64.deb",
+        "sha256": "a5a395b5a8fe4efe525bac91cefad704315a66c660923c821a8f9048ee69091c",
+        "size": 26683680
+      },
+      "linux-x86_64-tar": {
+        "url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor-releases/releases/download/v1.27.2/Internet-Fruehwarnmonitor-1.27.2-Linux-x86_64.tar.gz",
+        "filename": "Internet-Fruehwarnmonitor-1.27.2-Linux-x86_64.tar.gz",
+        "sha256": "04ca379d79104ce9bda15053fdd0c3a5ac28e8a1ccb3ec04b4769f759cfb63c1",
+        "size": 33511314
       }
     }
   },
-  "signature": "N5bl8NKXanPcyO7bkzwVC13iSW0YeTHUlcodf8tap8DSPPqikCa6/aAlja6jzUJZWkc6ncU2Km9QYxqESlmhAA=="
+  "signature": "51Mq8ROsJg57+A9f79yLIe9hDGn4JX9JFRC95pacg5Vbxd608anXGLIAv6RGFBT5S8rzwuIfbONi9MoO1QIGBA=="
 }
