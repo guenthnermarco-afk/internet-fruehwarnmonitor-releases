@@ -2,17 +2,17 @@
   "schema_version": 1,
   "channel": "stable",
   "release": {
-    "version": "1.22.0",
-    "published_at": "2026-09-04T00:12:15.092938Z",
-    "notes": "Optionale lokale Netzwerkdiagnose mit abschaltbarem UI-Modul, Router-/Adapter-/WLAN-Bewertung und lokalem HTML-Bericht.",
+    "version": "1.22.1",
+    "published_at": "2026-09-04T00:17:32.281851Z",
+    "notes": "Live-Dateilinks öffnen in neuen Tabs; Zeitfenster-Auswertungszeitraum eindeutig gekennzeichnet.",
     "artifacts": {
       "windows-x86_64": {
-        "url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor-releases/releases/download/v1.22.0/Internet-Fruehwarnmonitor-1.22.0-Setup.exe",
-        "filename": "Internet-Fruehwarnmonitor-1.22.0-Setup.exe",
-        "sha256": "b4bdec0c85ccecc56b0b2286637d41437bc443d96f52f607d77ca08c40d2e007",
-        "size": 14373372
+        "url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor-releases/releases/download/v1.22.1/Internet-Fruehwarnmonitor-1.22.1-Setup.exe",
+        "filename": "Internet-Fruehwarnmonitor-1.22.1-Setup.exe",
+        "sha256": "4e7164136cb2fc62a6e3125e72d25318fdf2e2cb3188ec2eb3526d9d04453e5e",
+        "size": 14372043
       }
     }
   },
-  "signature": "xm8jJW3+wpbBzJeujxm+ZnaKiUWvtWA03AzzcnWu7f3n3YmdEZVpfOVK1S0RyDBdRkDcI95Mi3AsA5HKKQ0rDQ=="
+  "signature": "vr4JSpopkRVx6PKt9a3Ihw2qTw6nqIGv04DV4kZKvRaU5RYEE3kSHPv4dQMUyj5fi1ya8L17fgORxnQ1PGMFCQ=="
 }
