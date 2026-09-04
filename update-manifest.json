@@ -2,17 +2,17 @@
   "schema_version": 1,
   "channel": "stable",
   "release": {
-    "version": "1.21.1",
-    "published_at": "2026-09-03T23:57:50.180872Z",
-    "notes": "Tagesberichte, verständliche Messdienstfehler und korrigierte FRITZ!Box-Neuverbindungserkennung",
+    "version": "1.22.0",
+    "published_at": "2026-09-04T00:12:15.092938Z",
+    "notes": "Optionale lokale Netzwerkdiagnose mit abschaltbarem UI-Modul, Router-/Adapter-/WLAN-Bewertung und lokalem HTML-Bericht.",
     "artifacts": {
       "windows-x86_64": {
-        "url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor-releases/releases/download/v1.21.1/Internet-Fruehwarnmonitor-1.21.1-Setup.exe",
-        "filename": "Internet-Fruehwarnmonitor-1.21.1-Setup.exe",
-        "sha256": "ce6baa479bd7baaccb82020dafb2e10dcb3edaf7ed0a199471bbff7944d65fbf",
-        "size": 14349909
+        "url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor-releases/releases/download/v1.22.0/Internet-Fruehwarnmonitor-1.22.0-Setup.exe",
+        "filename": "Internet-Fruehwarnmonitor-1.22.0-Setup.exe",
+        "sha256": "b4bdec0c85ccecc56b0b2286637d41437bc443d96f52f607d77ca08c40d2e007",
+        "size": 14373372
       }
     }
   },
-  "signature": "glVb1/+c58rjXtSu78OpCXoSbi5PRMk7X5yCjcO4Zz42w3vUPNVbZu6TeCEJBz6dOh6w74btLa3OTcofFc16AQ=="
+  "signature": "xm8jJW3+wpbBzJeujxm+ZnaKiUWvtWA03AzzcnWu7f3n3YmdEZVpfOVK1S0RyDBdRkDcI95Mi3AsA5HKKQ0rDQ=="
 }
