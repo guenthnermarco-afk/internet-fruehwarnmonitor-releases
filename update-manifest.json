@@ -2,17 +2,29 @@
   "schema_version": 1,
   "channel": "stable",
   "release": {
-    "version": "1.27.1",
-    "published_at": "2026-09-04T16:09:38.324753Z",
-    "notes": "Störungsreports zeigen das Datum einmal, kompakte Uhrzeiten und zusammengefasste Zustandsverläufe mit aufklappbaren Details.",
+    "version": "1.27.2",
+    "published_at": "2026-09-04T16:26:44.827251Z",
+    "notes": "Portabler Verlaufsimport und -export zwischen Windows und macOS. Vorhandene Messungen bleiben erhalten; Duplikate sowie gerätespezifische Einstellungen und Zugangsdaten werden nicht übernommen.",
     "artifacts": {
       "windows-x86_64": {
-        "url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor-releases/releases/download/v1.27.1/Internet-Fruehwarnmonitor-1.27.1-Setup.exe",
-        "filename": "Internet-Fruehwarnmonitor-1.27.1-Setup.exe",
-        "sha256": "a71002ba582f6574897157c388ad90dd860783e1a1f9bcfb0c9ac51c5fa608f3",
-        "size": 13645457
+        "url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor-releases/releases/download/v1.27.2/Internet-Fruehwarnmonitor-1.27.2-Setup.exe",
+        "filename": "Internet-Fruehwarnmonitor-1.27.2-Setup.exe",
+        "sha256": "c5d11d391cbbd4fb28c614f50723ca41c467c51544f562ade95fd507fef53379",
+        "size": 13660164
+      },
+      "macos-x86_64": {
+        "url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor-releases/releases/download/v1.27.2/Internet-Fruehwarnmonitor-1.27.2-macOS-x86_64.dmg",
+        "filename": "Internet-Fruehwarnmonitor-1.27.2-macOS-x86_64.dmg",
+        "sha256": "08edf095111a1b8b086d421435ace4e7b267d9e8dbee829fe602e3ea59bebff0",
+        "size": 18358753
+      },
+      "macos-arm64": {
+        "url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor-releases/releases/download/v1.27.2/Internet-Fruehwarnmonitor-1.27.2-macOS-arm64.dmg",
+        "filename": "Internet-Fruehwarnmonitor-1.27.2-macOS-arm64.dmg",
+        "sha256": "65b53abc3018ab488432eb174aeb2ae9d9fd0986a110e8ce4db42e91b3bfa2f3",
+        "size": 19464277
       }
     }
   },
-  "signature": "qeJWeDKOJ8NTRf8u3S8FHq0EoqylZusenBk0huMc/VkykZxZkCQRZzunyDHUKmaALEfxujBTlFoxSULXXfu4BA=="
+  "signature": "N5bl8NKXanPcyO7bkzwVC13iSW0YeTHUlcodf8tap8DSPPqikCa6/aAlja6jzUJZWkc6ncU2Km9QYxqESlmhAA=="
 }
