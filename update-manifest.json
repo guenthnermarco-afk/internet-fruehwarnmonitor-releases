@@ -2,75 +2,75 @@
   "schema_version": 1,
   "channel": "stable",
   "release": {
-    "version": "1.30.19",
-    "source_commit": "c6953065a6f0717edb7602398090d98a439de03a",
+    "version": "1.30.20",
+    "source_commit": "7511be5e50c501f4d116e2d9bc87ac5b9321859b",
     "distribution_tier": "freeware",
-    "published_at": "2026-09-07T04:56:06.760012Z",
-    "notes": "Antwortzeiten korrigiert: Die lokale Vorbereitung zählt nicht mehr zur HTTPS-/TCP-Netzantwortzeit. Echte Verzögerungen lösen weiterhin Warnungen aus.\n\nTagesberichte berücksichtigen die Messqualität und kennzeichnen schwache Einzelmessungen. RED-Wechsel sind keine Anzahl bestätigter Internetausfälle.\n\nM-Lab wiederholt vorübergehende Verbindungsfehler begrenzt innerhalb derselben Messung.\n\nEinstellungen und Messverlauf bleiben erhalten. Frühere Messwerte werden nicht nachträglich umgeschrieben.",
+    "published_at": "2026-09-07T05:54:58.212851Z",
+    "notes": "# Internet-Frühwarnmonitor 1.30.20\n\n## Router auswählen und Unterstützung besser erkennen\n\n- Eigener Reiter „Router“ in den Einstellungen, direkt erreichbar über\n  „Menü → Verbindungen und Einstellungen → Router auswählen / Einstellungen …“.\n- Automatische Erkennung oder Herstellerprofil auswählen. Die Hinweise erklären,\n  welche Zusatzdaten verfügbar sind und welche Anbindungen noch fehlen.\n- Die Erkennung nennt die tatsächlich gelesenen Werte und ihre Schnittstelle.\n  Fehlende Einzelwerte bleiben „–“, statt als vermeintlich gemessene Null zu erscheinen.\n- Die Grundüberwachung funktioniert unabhängig von der optionalen Router-Anbindung.\n  Der Profilwechsel wird ohne vollständigen App-Neustart übernommen.\n\n## Neuer Speedport-Statustreiber\n\n- Kompatible öffentliche Speedport-Statusantworten werden ohne Anmeldung gelesen,\n  als Klartext-JSON oder in der unterstützten verschlüsselten Variante.\n- Je nach Modell und Firmware sind Modell, Firmware, Internetstatus sowie\n  DSL-Synchronisationswerte verfügbar. Synchronisationsrate ist kein Speedtest.\n- Ein unbenutzter DSL-Port wird bei Glasfaser- oder Hybridbetrieb nicht als\n  ausgefallene Internetverbindung interpretiert.\n- Wichtig: Dieser neue Treiber wurde mit simulierten Routerantworten geprüft,\n  noch nicht an echter Speedport-Hardware. Keine Zusage für alle Speedport-Serien.\n  Gerätelisten, fremde WLAN-Signalwerte und Speedport-Web-Anmeldungen fehlen noch.\n\n## FRITZ!Box und allgemeine Router-Schnittstellen\n\n- Nicht unterstützte TR-064-Aktionen werden von falschen Zugangsdaten und\n  fehlenden Benutzerrechten unterschieden. SOAP-Fehler 401 ist nicht HTTP 401.\n- Zusätzlicher Rückfall für WAN-PPP und kompatible Statusaktionen.\n- UPnP-Erkennung berücksichtigt mehrere Beschreibungen und Router ohne gemeinsame\n  WAN-Zähler. Bei mehreren IP-/PPP-Diensten wird eine aktive Verbindung bevorzugt.\n- Nicht verfügbare Schnittstellen werden nicht bei jedem Messzyklus erneut\n  angesprochen. Eine manuelle Neuerkennung bleibt sofort möglich.\n- Nicht-AVM-Herstellerprofile verwenden keine gespeicherten FRITZ!Box-Zugangsdaten.\n  Router-Abfragen bleiben lesend und folgen keinen HTTP-Weiterleitungen.\n\n## Grenzen und Installationspakete\n\nVodafone Station/EasyBox, TP-Link und weitere Hersteller erhalten weiterhin\nGrundüberwachung sowie gegebenenfalls die vom Router angebotenen UPnP/IGD-Werte.\nVollständige herstellerspezifische Anmeldungen, Gerätelisten und WLAN-Details sind\ndort noch nicht implementiert. Ein Herstellerprofil ist keine vollständige Modellfreigabe.\n\nPakete für Windows x64, macOS Intel und Apple Silicon sowie Linux x64 (DEB und\nportables Archiv). Einstellungen und Messhistorie bleiben beim Update erhalten.\nDas Update-Manifest ist signiert; Windows-/Apple-Herausgebersignaturen und\nmacOS-Notarisierung sind weiterhin nicht vorhanden.",
     "artifacts": {
       "windows-x86_64": {
-        "url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor-releases/releases/download/v1.30.19/Internet-Fruehwarnmonitor-1.30.19-Setup.exe",
-        "filename": "Internet-Fruehwarnmonitor-1.30.19-Setup.exe",
-        "sha256": "7a3a5f9575ccdec403fa1b5fc45116de1bf0478394aea7ac85421685fed2fcf0",
-        "size": 14881754
+        "url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor-releases/releases/download/v1.30.20/Internet-Fruehwarnmonitor-1.30.20-Setup.exe",
+        "filename": "Internet-Fruehwarnmonitor-1.30.20-Setup.exe",
+        "sha256": "d183442f87c7f57b0f794b0ea12f9dc6b169832243ff9ba7067f38a507783ef1",
+        "size": 14897891
       },
       "macos-x86_64": {
-        "url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor-releases/releases/download/v1.30.19/Internet-Fruehwarnmonitor-1.30.19-macOS-x86_64.dmg",
-        "filename": "Internet-Fruehwarnmonitor-1.30.19-macOS-x86_64.dmg",
-        "sha256": "968c85aa5009b83af441fd1c907c7eb3e296a53fdaa98b56b650ef9dfd1f238c",
-        "size": 22019938
+        "url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor-releases/releases/download/v1.30.20/Internet-Fruehwarnmonitor-1.30.20-macOS-x86_64.dmg",
+        "filename": "Internet-Fruehwarnmonitor-1.30.20-macOS-x86_64.dmg",
+        "sha256": "a35a3806b778f86fdb865deb97136fed5888535db1afd4b36e292b5d62ada2d1",
+        "size": 22027301
       },
       "macos-arm64": {
-        "url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor-releases/releases/download/v1.30.19/Internet-Fruehwarnmonitor-1.30.19-macOS-arm64.dmg",
-        "filename": "Internet-Fruehwarnmonitor-1.30.19-macOS-arm64.dmg",
-        "sha256": "6b11c74b69275ce979d7dd4771f083ddf928548fd898b037129952ec015a203e",
-        "size": 21630506
+        "url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor-releases/releases/download/v1.30.20/Internet-Fruehwarnmonitor-1.30.20-macOS-arm64.dmg",
+        "filename": "Internet-Fruehwarnmonitor-1.30.20-macOS-arm64.dmg",
+        "sha256": "b9c4e8462715cf42bc6702596737d8e7d69d797242c05d2c35bc5f3dbf7c2058",
+        "size": 21654185
       },
       "linux-x86_64-deb": {
-        "url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor-releases/releases/download/v1.30.19/internet-fruehwarnmonitor_1.30.19_amd64.deb",
-        "filename": "internet-fruehwarnmonitor_1.30.19_amd64.deb",
-        "sha256": "e6855e0ea3ae65e14ca03413dfdd113e9e8037708b2237b384ffa484353e1079",
-        "size": 28483988
+        "url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor-releases/releases/download/v1.30.20/internet-fruehwarnmonitor_1.30.20_amd64.deb",
+        "filename": "internet-fruehwarnmonitor_1.30.20_amd64.deb",
+        "sha256": "e3e3f878fb81237f22e0cb4f43215e6bd0e2ad778579fde3e4ac7217a0d55090",
+        "size": 28513038
       },
       "linux-x86_64-tar": {
-        "url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor-releases/releases/download/v1.30.19/Internet-Fruehwarnmonitor-1.30.19-Linux-x86_64.tar.gz",
-        "filename": "Internet-Fruehwarnmonitor-1.30.19-Linux-x86_64.tar.gz",
-        "sha256": "6cc349645fa7870f0620ce836cfaf1ceb77c41b68679f22ea56d854a6e938a00",
-        "size": 34441025
+        "url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor-releases/releases/download/v1.30.20/Internet-Fruehwarnmonitor-1.30.20-Linux-x86_64.tar.gz",
+        "filename": "Internet-Fruehwarnmonitor-1.30.20-Linux-x86_64.tar.gz",
+        "sha256": "03c4958d4a2a19299b9effbf619fed711ef749075c3f32bd4e0dc797d998f8fa",
+        "size": 34461003
       }
     },
     "artifact_provenance": {
       "windows-x86_64": {
-        "source_commit": "c6953065a6f0717edb7602398090d98a439de03a",
+        "source_commit": "7511be5e50c501f4d116e2d9bc87ac5b9321859b",
         "distribution_status": "freeware-unsigned",
         "platform": "windows-x86_64",
-        "github_run_url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor/actions/runs/34084733194"
+        "github_run_url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor/actions/runs/34088381405"
       },
       "macos-x86_64": {
-        "source_commit": "c6953065a6f0717edb7602398090d98a439de03a",
+        "source_commit": "7511be5e50c501f4d116e2d9bc87ac5b9321859b",
         "distribution_status": "freeware-unsigned",
         "platform": "macos-x86_64",
-        "github_run_url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor/actions/runs/34084733206"
+        "github_run_url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor/actions/runs/34088381458"
       },
       "macos-arm64": {
-        "source_commit": "c6953065a6f0717edb7602398090d98a439de03a",
+        "source_commit": "7511be5e50c501f4d116e2d9bc87ac5b9321859b",
         "distribution_status": "freeware-unsigned",
         "platform": "macos-arm64",
-        "github_run_url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor/actions/runs/34084733206"
+        "github_run_url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor/actions/runs/34088381458"
       },
       "linux-x86_64-deb": {
-        "source_commit": "c6953065a6f0717edb7602398090d98a439de03a",
+        "source_commit": "7511be5e50c501f4d116e2d9bc87ac5b9321859b",
         "distribution_status": "freeware-unsigned",
         "platform": "linux-x86_64-deb",
-        "github_run_url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor/actions/runs/34084733192"
+        "github_run_url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor/actions/runs/34088381377"
       },
       "linux-x86_64-tar": {
-        "source_commit": "c6953065a6f0717edb7602398090d98a439de03a",
+        "source_commit": "7511be5e50c501f4d116e2d9bc87ac5b9321859b",
         "distribution_status": "freeware-unsigned",
         "platform": "linux-x86_64-tar",
-        "github_run_url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor/actions/runs/34084733192"
+        "github_run_url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor/actions/runs/34088381377"
       }
     }
   },
-  "signature": "uj44qE44eI+mBtvJzkHPk86OGj3ycVwnPjlNcbLqgwMHNwGklvHAdZXAyPGWuXhT9lzgQKBogfE6YoKseiZhCA=="
+  "signature": "D4OMIUaZ7IsM+oZZe9pDrnJ1brCL+LK6d5c/TqvBsBFD7PYpGGImxpmAnTTAIDF9S2hnjGXEy/7WdARkjrebAQ=="
 }
