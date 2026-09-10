@@ -2,75 +2,75 @@
   "schema_version": 1,
   "channel": "stable",
   "release": {
-    "version": "1.30.20",
-    "source_commit": "7511be5e50c501f4d116e2d9bc87ac5b9321859b",
+    "version": "1.30.25",
+    "source_commit": "d3db6557d28b0d51ac825b025a4e9fc6641ae323",
     "distribution_tier": "freeware",
-    "published_at": "2026-09-07T05:54:58.212851Z",
-    "notes": "# Internet-Frühwarnmonitor 1.30.20\n\n## Router auswählen und Unterstützung besser erkennen\n\n- Eigener Reiter „Router“ in den Einstellungen, direkt erreichbar über\n  „Menü → Verbindungen und Einstellungen → Router auswählen / Einstellungen …“.\n- Automatische Erkennung oder Herstellerprofil auswählen. Die Hinweise erklären,\n  welche Zusatzdaten verfügbar sind und welche Anbindungen noch fehlen.\n- Die Erkennung nennt die tatsächlich gelesenen Werte und ihre Schnittstelle.\n  Fehlende Einzelwerte bleiben „–“, statt als vermeintlich gemessene Null zu erscheinen.\n- Die Grundüberwachung funktioniert unabhängig von der optionalen Router-Anbindung.\n  Der Profilwechsel wird ohne vollständigen App-Neustart übernommen.\n\n## Neuer Speedport-Statustreiber\n\n- Kompatible öffentliche Speedport-Statusantworten werden ohne Anmeldung gelesen,\n  als Klartext-JSON oder in der unterstützten verschlüsselten Variante.\n- Je nach Modell und Firmware sind Modell, Firmware, Internetstatus sowie\n  DSL-Synchronisationswerte verfügbar. Synchronisationsrate ist kein Speedtest.\n- Ein unbenutzter DSL-Port wird bei Glasfaser- oder Hybridbetrieb nicht als\n  ausgefallene Internetverbindung interpretiert.\n- Wichtig: Dieser neue Treiber wurde mit simulierten Routerantworten geprüft,\n  noch nicht an echter Speedport-Hardware. Keine Zusage für alle Speedport-Serien.\n  Gerätelisten, fremde WLAN-Signalwerte und Speedport-Web-Anmeldungen fehlen noch.\n\n## FRITZ!Box und allgemeine Router-Schnittstellen\n\n- Nicht unterstützte TR-064-Aktionen werden von falschen Zugangsdaten und\n  fehlenden Benutzerrechten unterschieden. SOAP-Fehler 401 ist nicht HTTP 401.\n- Zusätzlicher Rückfall für WAN-PPP und kompatible Statusaktionen.\n- UPnP-Erkennung berücksichtigt mehrere Beschreibungen und Router ohne gemeinsame\n  WAN-Zähler. Bei mehreren IP-/PPP-Diensten wird eine aktive Verbindung bevorzugt.\n- Nicht verfügbare Schnittstellen werden nicht bei jedem Messzyklus erneut\n  angesprochen. Eine manuelle Neuerkennung bleibt sofort möglich.\n- Nicht-AVM-Herstellerprofile verwenden keine gespeicherten FRITZ!Box-Zugangsdaten.\n  Router-Abfragen bleiben lesend und folgen keinen HTTP-Weiterleitungen.\n\n## Grenzen und Installationspakete\n\nVodafone Station/EasyBox, TP-Link und weitere Hersteller erhalten weiterhin\nGrundüberwachung sowie gegebenenfalls die vom Router angebotenen UPnP/IGD-Werte.\nVollständige herstellerspezifische Anmeldungen, Gerätelisten und WLAN-Details sind\ndort noch nicht implementiert. Ein Herstellerprofil ist keine vollständige Modellfreigabe.\n\nPakete für Windows x64, macOS Intel und Apple Silicon sowie Linux x64 (DEB und\nportables Archiv). Einstellungen und Messhistorie bleiben beim Update erhalten.\nDas Update-Manifest ist signiert; Windows-/Apple-Herausgebersignaturen und\nmacOS-Notarisierung sind weiterhin nicht vorhanden.",
+    "published_at": "2026-09-10T18:53:19.138841Z",
+    "notes": "# Internet-Frühwarnmonitor 1.30.25\n\n## Private Fehlerberichte\n\n- Eigenständiger Button „Fehler melden“ neben dem Menü.\n- Beschreibung und begrenzte, bearbeitbare Fehlerdokumentation vor dem Versand prüfen.\n- Optional unter Windows: ausschließlich das Monitorfenster aufnehmen, Vorschau prüfen und Bereiche dauerhaft schwärzen.\n- Versand nur nach ausdrücklicher Freigabe an den privaten Support, nicht an öffentliche GitHub-Issues. Alternativ lokal als ZIP speichern.\n- Die Empfängeradresse und Mail-Zugangsdaten sind nicht im Client enthalten. Übermittlung über Google Apps Script an das private Supportpostfach.\n- Schutz gegen doppelte Übertragung desselben Berichts sowie Größen- und Versandlimits. Der tatsächliche Empfang eines synthetischen Testberichts mit allen drei Anhängen wurde bestätigt.\n- Fehlerberichte werden durch den Herausgeber spätestens 30 Tage nach Abschluss der Bearbeitung, spätestens 90 Tage nach Eingang gelöscht.\n\n## Paketierung und Integritätsprüfung\n\n- Keine lesbaren Python-Quelldateien der Anwendung im Installationspaket; stattdessen kompilierte Module mit geprüften Build-Identitäten.\n- Historische Auswertungslogik bleibt für vorhandene Messverläufe erhalten. Fehlende oder veränderte kompilierte Prüfmodule werden nicht als gültige historische Reproduktion ausgegeben.\n- Kompilierung ist kein Kopierschutz und verhindert kein Reverse Engineering.\n\n## Bisherige lokale Korrekturen jetzt im Update\n\n- Getrennte IPv4-/IPv6-Bewertung einschließlich eines ausdrücklich wählbaren IPv4-Anschlussprofils.\n- Verbesserte Zuordnung von Messungen zum ausgewählten Adapter sowie nachvollziehbare Evidenz- und Verlaufsprüfung.\n- 14-Tage-Aufbewahrung mit separatem Vault für bewusst aufgehobene Berichte.\n- Vault-Verzeichnisse funktionieren auch unter gültigen Windows-Kurzpfaden und macOS-Pfadaliasen; umgeleitete Vault-Ordner werden weiter abgelehnt.\n- Automatische Cloudflare-Trendtests lassen sich in den Messeinstellungen abschalten. Solche Trendtests sind kein Nachweis der maximalen Anschlussleistung.\n\n## Hinweise\n\n- Kein automatischer Versand von Messdaten oder Bildschirmaufnahmen. Die freiwillige Fehlerbericht-Funktion ist unabhängig von der laufenden Überwachung.\n- macOS und Linux unterstützen Textberichte und Diagnoseanhänge; die optionale Fensteraufnahme ist zunächst Windows vorbehalten.\n- Der Empfang ist für einen begrenzten Freeware-Pilotbetrieb ausgelegt. Er kann bei ausgeschöpftem Kontingent pausieren; lokales Speichern bleibt möglich.\n- Das Update-Manifest wird kryptografisch signiert. Windows-Herausgebersignatur sowie Apple Developer ID und Notarisierung fehlen weiterhin; Betriebssystemwarnungen sind möglich.\n- Die Ampel ist eine technische Diagnosehilfe und ersetzt keinen amtlichen Breitbandmessungsnachweis.",
     "artifacts": {
       "windows-x86_64": {
-        "url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor-releases/releases/download/v1.30.20/Internet-Fruehwarnmonitor-1.30.20-Setup.exe",
-        "filename": "Internet-Fruehwarnmonitor-1.30.20-Setup.exe",
-        "sha256": "d183442f87c7f57b0f794b0ea12f9dc6b169832243ff9ba7067f38a507783ef1",
-        "size": 14897891
+        "url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor-releases/releases/download/v1.30.25/Internet-Fruehwarnmonitor-1.30.25-Setup.exe",
+        "filename": "Internet-Fruehwarnmonitor-1.30.25-Setup.exe",
+        "sha256": "c7b78bac3824bac952f3d233c8886be68a20e00ea84064a2cd62c20fd92b54e9",
+        "size": 14886271
       },
       "macos-x86_64": {
-        "url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor-releases/releases/download/v1.30.20/Internet-Fruehwarnmonitor-1.30.20-macOS-x86_64.dmg",
-        "filename": "Internet-Fruehwarnmonitor-1.30.20-macOS-x86_64.dmg",
-        "sha256": "a35a3806b778f86fdb865deb97136fed5888535db1afd4b36e292b5d62ada2d1",
-        "size": 22027301
+        "url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor-releases/releases/download/v1.30.25/Internet-Fruehwarnmonitor-1.30.25-macOS-x86_64.dmg",
+        "filename": "Internet-Fruehwarnmonitor-1.30.25-macOS-x86_64.dmg",
+        "sha256": "6e9614e98fe831a64f6606e6c4d290e1b0643e1f61068a831c3e5947aafb56f8",
+        "size": 23267144
       },
       "macos-arm64": {
-        "url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor-releases/releases/download/v1.30.20/Internet-Fruehwarnmonitor-1.30.20-macOS-arm64.dmg",
-        "filename": "Internet-Fruehwarnmonitor-1.30.20-macOS-arm64.dmg",
-        "sha256": "b9c4e8462715cf42bc6702596737d8e7d69d797242c05d2c35bc5f3dbf7c2058",
-        "size": 21654185
+        "url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor-releases/releases/download/v1.30.25/Internet-Fruehwarnmonitor-1.30.25-macOS-arm64.dmg",
+        "filename": "Internet-Fruehwarnmonitor-1.30.25-macOS-arm64.dmg",
+        "sha256": "e653b548c4b945691638b92176260c9f612fed6be36e132a21a7c59c345ec86f",
+        "size": 22902376
       },
       "linux-x86_64-deb": {
-        "url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor-releases/releases/download/v1.30.20/internet-fruehwarnmonitor_1.30.20_amd64.deb",
-        "filename": "internet-fruehwarnmonitor_1.30.20_amd64.deb",
-        "sha256": "e3e3f878fb81237f22e0cb4f43215e6bd0e2ad778579fde3e4ac7217a0d55090",
-        "size": 28513038
+        "url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor-releases/releases/download/v1.30.25/internet-fruehwarnmonitor_1.30.25_amd64.deb",
+        "filename": "internet-fruehwarnmonitor_1.30.25_amd64.deb",
+        "sha256": "3c55111f58f52fb7d30210dc4d3802290daf9ac7caa1472aa1a667a79feb6b2d",
+        "size": 28542690
       },
       "linux-x86_64-tar": {
-        "url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor-releases/releases/download/v1.30.20/Internet-Fruehwarnmonitor-1.30.20-Linux-x86_64.tar.gz",
-        "filename": "Internet-Fruehwarnmonitor-1.30.20-Linux-x86_64.tar.gz",
-        "sha256": "03c4958d4a2a19299b9effbf619fed711ef749075c3f32bd4e0dc797d998f8fa",
-        "size": 34461003
+        "url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor-releases/releases/download/v1.30.25/Internet-Fruehwarnmonitor-1.30.25-Linux-x86_64.tar.gz",
+        "filename": "Internet-Fruehwarnmonitor-1.30.25-Linux-x86_64.tar.gz",
+        "sha256": "4289f408168d89f6b6f4403dfef4ac233cf26d92fe36d2b28d8720070651943f",
+        "size": 34860731
       }
     },
     "artifact_provenance": {
       "windows-x86_64": {
-        "source_commit": "7511be5e50c501f4d116e2d9bc87ac5b9321859b",
+        "source_commit": "d3db6557d28b0d51ac825b025a4e9fc6641ae323",
         "distribution_status": "freeware-unsigned",
         "platform": "windows-x86_64",
-        "github_run_url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor/actions/runs/34088381405"
+        "github_run_url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor/actions/runs/34516492768"
       },
       "macos-x86_64": {
-        "source_commit": "7511be5e50c501f4d116e2d9bc87ac5b9321859b",
+        "source_commit": "d3db6557d28b0d51ac825b025a4e9fc6641ae323",
         "distribution_status": "freeware-unsigned",
         "platform": "macos-x86_64",
-        "github_run_url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor/actions/runs/34088381458"
+        "github_run_url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor/actions/runs/34516492804"
       },
       "macos-arm64": {
-        "source_commit": "7511be5e50c501f4d116e2d9bc87ac5b9321859b",
+        "source_commit": "d3db6557d28b0d51ac825b025a4e9fc6641ae323",
         "distribution_status": "freeware-unsigned",
         "platform": "macos-arm64",
-        "github_run_url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor/actions/runs/34088381458"
+        "github_run_url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor/actions/runs/34516492804"
       },
       "linux-x86_64-deb": {
-        "source_commit": "7511be5e50c501f4d116e2d9bc87ac5b9321859b",
+        "source_commit": "d3db6557d28b0d51ac825b025a4e9fc6641ae323",
         "distribution_status": "freeware-unsigned",
         "platform": "linux-x86_64-deb",
-        "github_run_url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor/actions/runs/34088381377"
+        "github_run_url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor/actions/runs/34516492773"
       },
       "linux-x86_64-tar": {
-        "source_commit": "7511be5e50c501f4d116e2d9bc87ac5b9321859b",
+        "source_commit": "d3db6557d28b0d51ac825b025a4e9fc6641ae323",
         "distribution_status": "freeware-unsigned",
         "platform": "linux-x86_64-tar",
-        "github_run_url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor/actions/runs/34088381377"
+        "github_run_url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor/actions/runs/34516492773"
       }
     }
   },
-  "signature": "D4OMIUaZ7IsM+oZZe9pDrnJ1brCL+LK6d5c/TqvBsBFD7PYpGGImxpmAnTTAIDF9S2hnjGXEy/7WdARkjrebAQ=="
+  "signature": "L6ilv6iodAjKzQnLoZsdIQ1veX6b6aCGaDH9fjIMHnHF27usbN7u/SU3Nklr4NJlQcIrwj5W8Btrfq/5x5XqBg=="
 }
