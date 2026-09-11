@@ -2,75 +2,75 @@
   "schema_version": 1,
   "channel": "stable",
   "release": {
-    "version": "1.30.25",
-    "source_commit": "d3db6557d28b0d51ac825b025a4e9fc6641ae323",
+    "version": "1.30.28",
+    "source_commit": "f1fde252fdd0647e5034088f802c7b53c349b5ee",
     "distribution_tier": "freeware",
-    "published_at": "2026-09-10T18:53:19.138841Z",
-    "notes": "# Internet-Frühwarnmonitor 1.30.25\n\n## Private Fehlerberichte\n\n- Eigenständiger Button „Fehler melden“ neben dem Menü.\n- Beschreibung und begrenzte, bearbeitbare Fehlerdokumentation vor dem Versand prüfen.\n- Optional unter Windows: ausschließlich das Monitorfenster aufnehmen, Vorschau prüfen und Bereiche dauerhaft schwärzen.\n- Versand nur nach ausdrücklicher Freigabe an den privaten Support, nicht an öffentliche GitHub-Issues. Alternativ lokal als ZIP speichern.\n- Die Empfängeradresse und Mail-Zugangsdaten sind nicht im Client enthalten. Übermittlung über Google Apps Script an das private Supportpostfach.\n- Schutz gegen doppelte Übertragung desselben Berichts sowie Größen- und Versandlimits. Der tatsächliche Empfang eines synthetischen Testberichts mit allen drei Anhängen wurde bestätigt.\n- Fehlerberichte werden durch den Herausgeber spätestens 30 Tage nach Abschluss der Bearbeitung, spätestens 90 Tage nach Eingang gelöscht.\n\n## Paketierung und Integritätsprüfung\n\n- Keine lesbaren Python-Quelldateien der Anwendung im Installationspaket; stattdessen kompilierte Module mit geprüften Build-Identitäten.\n- Historische Auswertungslogik bleibt für vorhandene Messverläufe erhalten. Fehlende oder veränderte kompilierte Prüfmodule werden nicht als gültige historische Reproduktion ausgegeben.\n- Kompilierung ist kein Kopierschutz und verhindert kein Reverse Engineering.\n\n## Bisherige lokale Korrekturen jetzt im Update\n\n- Getrennte IPv4-/IPv6-Bewertung einschließlich eines ausdrücklich wählbaren IPv4-Anschlussprofils.\n- Verbesserte Zuordnung von Messungen zum ausgewählten Adapter sowie nachvollziehbare Evidenz- und Verlaufsprüfung.\n- 14-Tage-Aufbewahrung mit separatem Vault für bewusst aufgehobene Berichte.\n- Vault-Verzeichnisse funktionieren auch unter gültigen Windows-Kurzpfaden und macOS-Pfadaliasen; umgeleitete Vault-Ordner werden weiter abgelehnt.\n- Automatische Cloudflare-Trendtests lassen sich in den Messeinstellungen abschalten. Solche Trendtests sind kein Nachweis der maximalen Anschlussleistung.\n\n## Hinweise\n\n- Kein automatischer Versand von Messdaten oder Bildschirmaufnahmen. Die freiwillige Fehlerbericht-Funktion ist unabhängig von der laufenden Überwachung.\n- macOS und Linux unterstützen Textberichte und Diagnoseanhänge; die optionale Fensteraufnahme ist zunächst Windows vorbehalten.\n- Der Empfang ist für einen begrenzten Freeware-Pilotbetrieb ausgelegt. Er kann bei ausgeschöpftem Kontingent pausieren; lokales Speichern bleibt möglich.\n- Das Update-Manifest wird kryptografisch signiert. Windows-Herausgebersignatur sowie Apple Developer ID und Notarisierung fehlen weiterhin; Betriebssystemwarnungen sind möglich.\n- Die Ampel ist eine technische Diagnosehilfe und ersetzt keinen amtlichen Breitbandmessungsnachweis.",
+    "published_at": "2026-09-11T02:55:41.791962Z",
+    "notes": "# Internet-Frühwarnmonitor 1.30.28\n\n## Windows-Update aus dem laufenden Monitor repariert\n\n- Der Installer beendet nicht mehr den gesamten Prozessbaum des Monitors. Dadurch wird ein vom Monitor gestarteter Installer nicht versehentlich mit beendet.\n- Installation und Deinstallation warten auf das saubere Ende des Monitors, bevor Programmdateien verändert werden. Laufende Schreibvorgänge werden nicht gewaltsam abgebrochen.\n- Ist der Monitor nach 60 Prüfzyklen noch aktiv, erscheint ein verständlicher Hinweis mit Wiederholen/Abbrechen. Bitte den Monitor über „Menü → Überwachung beenden“ schließen; X minimiert nur. Eine stille Installation bricht in diesem Fall ohne Änderung der Programmdateien mit Fehlercode 2 ab.\n- Die bisherige Fehlersituation, das saubere Ende des Elternprozesses und der geschützte Abbruch bei weiterhin laufendem Monitor sind als native Windows-Regressionstests ergänzt. Ein eigener Startabgleich erfasst auch verzögerte Installer-Starts zuverlässig.\n- Vorhandene Einstellungen und Messdaten bleiben bei einem erfolgreichen Update erhalten.\n\n## Weiterhin enthalten\n\n- Private Fehlerberichte mit Vorschau und optionaler Aufnahme ausschließlich des eigenen Monitorfensters unter Windows. Kein automatischer Versand und keine öffentliche GitHub-Veröffentlichung der Berichte.\n- Kompilierte Anwendungsmodule ohne lesbare Python-Quelldateien im Paket; aktuelle und historische Integritätsprüfungen bleiben erhalten. Kein vollständiger Schutz vor Reverse Engineering.\n- Kryptografisch signiertes Update-Manifest. Windows-Herausgebersignatur sowie Apple Developer ID/Notarisierung fehlen weiterhin; Betriebssystemwarnungen sind möglich.",
     "artifacts": {
       "windows-x86_64": {
-        "url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor-releases/releases/download/v1.30.25/Internet-Fruehwarnmonitor-1.30.25-Setup.exe",
-        "filename": "Internet-Fruehwarnmonitor-1.30.25-Setup.exe",
-        "sha256": "c7b78bac3824bac952f3d233c8886be68a20e00ea84064a2cd62c20fd92b54e9",
-        "size": 14886271
+        "url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor-releases/releases/download/v1.30.28/Internet-Fruehwarnmonitor-1.30.28-Setup.exe",
+        "filename": "Internet-Fruehwarnmonitor-1.30.28-Setup.exe",
+        "sha256": "2b22482930f931cbf8aa52d32eb30f53699c49c8791bfe986371b74c69811e5b",
+        "size": 14883790
       },
       "macos-x86_64": {
-        "url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor-releases/releases/download/v1.30.25/Internet-Fruehwarnmonitor-1.30.25-macOS-x86_64.dmg",
-        "filename": "Internet-Fruehwarnmonitor-1.30.25-macOS-x86_64.dmg",
-        "sha256": "6e9614e98fe831a64f6606e6c4d290e1b0643e1f61068a831c3e5947aafb56f8",
-        "size": 23267144
+        "url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor-releases/releases/download/v1.30.28/Internet-Fruehwarnmonitor-1.30.28-macOS-x86_64.dmg",
+        "filename": "Internet-Fruehwarnmonitor-1.30.28-macOS-x86_64.dmg",
+        "sha256": "6ff8398d39c843e4081e98da82276d24316f914380af59cf24b9b0318220e78b",
+        "size": 24774471
       },
       "macos-arm64": {
-        "url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor-releases/releases/download/v1.30.25/Internet-Fruehwarnmonitor-1.30.25-macOS-arm64.dmg",
-        "filename": "Internet-Fruehwarnmonitor-1.30.25-macOS-arm64.dmg",
-        "sha256": "e653b548c4b945691638b92176260c9f612fed6be36e132a21a7c59c345ec86f",
-        "size": 22902376
+        "url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor-releases/releases/download/v1.30.28/Internet-Fruehwarnmonitor-1.30.28-macOS-arm64.dmg",
+        "filename": "Internet-Fruehwarnmonitor-1.30.28-macOS-arm64.dmg",
+        "sha256": "4de90abb4d46792988435ebb524ad916f1cd13c96b7fae76bd8450a21377c5d9",
+        "size": 22903006
       },
       "linux-x86_64-deb": {
-        "url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor-releases/releases/download/v1.30.25/internet-fruehwarnmonitor_1.30.25_amd64.deb",
-        "filename": "internet-fruehwarnmonitor_1.30.25_amd64.deb",
-        "sha256": "3c55111f58f52fb7d30210dc4d3802290daf9ac7caa1472aa1a667a79feb6b2d",
-        "size": 28542690
+        "url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor-releases/releases/download/v1.30.28/internet-fruehwarnmonitor_1.30.28_amd64.deb",
+        "filename": "internet-fruehwarnmonitor_1.30.28_amd64.deb",
+        "sha256": "402ef8d95ea8a8c439d25e8a7c53049568bd79f0e3bc66a4be564529dea685b3",
+        "size": 28544222
       },
       "linux-x86_64-tar": {
-        "url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor-releases/releases/download/v1.30.25/Internet-Fruehwarnmonitor-1.30.25-Linux-x86_64.tar.gz",
-        "filename": "Internet-Fruehwarnmonitor-1.30.25-Linux-x86_64.tar.gz",
-        "sha256": "4289f408168d89f6b6f4403dfef4ac233cf26d92fe36d2b28d8720070651943f",
-        "size": 34860731
+        "url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor-releases/releases/download/v1.30.28/Internet-Fruehwarnmonitor-1.30.28-Linux-x86_64.tar.gz",
+        "filename": "Internet-Fruehwarnmonitor-1.30.28-Linux-x86_64.tar.gz",
+        "sha256": "9e5fd64c17198bcf5ca609075ee01bbdf725904eb8a4de83f762b3c8de7a2b54",
+        "size": 34861404
       }
     },
     "artifact_provenance": {
       "windows-x86_64": {
-        "source_commit": "d3db6557d28b0d51ac825b025a4e9fc6641ae323",
+        "source_commit": "f1fde252fdd0647e5034088f802c7b53c349b5ee",
         "distribution_status": "freeware-unsigned",
         "platform": "windows-x86_64",
-        "github_run_url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor/actions/runs/34516492768"
+        "github_run_url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor/actions/runs/34556079891"
       },
       "macos-x86_64": {
-        "source_commit": "d3db6557d28b0d51ac825b025a4e9fc6641ae323",
+        "source_commit": "f1fde252fdd0647e5034088f802c7b53c349b5ee",
         "distribution_status": "freeware-unsigned",
         "platform": "macos-x86_64",
-        "github_run_url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor/actions/runs/34516492804"
+        "github_run_url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor/actions/runs/34556080001"
       },
       "macos-arm64": {
-        "source_commit": "d3db6557d28b0d51ac825b025a4e9fc6641ae323",
+        "source_commit": "f1fde252fdd0647e5034088f802c7b53c349b5ee",
         "distribution_status": "freeware-unsigned",
         "platform": "macos-arm64",
-        "github_run_url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor/actions/runs/34516492804"
+        "github_run_url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor/actions/runs/34556080001"
       },
       "linux-x86_64-deb": {
-        "source_commit": "d3db6557d28b0d51ac825b025a4e9fc6641ae323",
+        "source_commit": "f1fde252fdd0647e5034088f802c7b53c349b5ee",
         "distribution_status": "freeware-unsigned",
         "platform": "linux-x86_64-deb",
-        "github_run_url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor/actions/runs/34516492773"
+        "github_run_url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor/actions/runs/34556079947"
       },
       "linux-x86_64-tar": {
-        "source_commit": "d3db6557d28b0d51ac825b025a4e9fc6641ae323",
+        "source_commit": "f1fde252fdd0647e5034088f802c7b53c349b5ee",
         "distribution_status": "freeware-unsigned",
         "platform": "linux-x86_64-tar",
-        "github_run_url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor/actions/runs/34516492773"
+        "github_run_url": "https://github.com/guenthnermarco-afk/internet-fruehwarnmonitor/actions/runs/34556079947"
       }
     }
   },
-  "signature": "L6ilv6iodAjKzQnLoZsdIQ1veX6b6aCGaDH9fjIMHnHF27usbN7u/SU3Nklr4NJlQcIrwj5W8Btrfq/5x5XqBg=="
+  "signature": "eTgltdKydxiQlHq98qenDgKKHhnXNcz6q/1hNUO1CdiN8XlgvaLNYhbOaYmwESwJAl981LeoPotv2k4xIk9EAA=="
 }
